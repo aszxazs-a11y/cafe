@@ -550,3 +550,368 @@ section {
 .fade-in {
     animation: fadeInUp 0.6s ease forwards;
 }
+
+/* ========================================
+   서브페이지 스타일
+======================================== */
+
+/* 활성 링크 */
+.active-link {
+    color: #2d5a45 !important;
+    font-weight: 600 !important;
+}
+
+/* 페이지 헤더 */
+.page-header {
+    height: 50vh;
+    min-height: 400px;
+    background: linear-gradient(135deg, #2d5a45 0%, #1a3d2e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+}
+
+.page-header-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 4px;
+}
+
+.page-header-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* 소개 페이지 스타일 */
+.about-page {
+    background: white;
+}
+
+.about-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.about-intro h2 {
+    font-size: 2rem;
+    color: #2d5a45;
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    color: #666;
+    line-height: 2;
+}
+
+/* 스토리 섹션 */
+.story-section {
+    margin-bottom: 80px;
+}
+
+.story-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.story-item.reverse {
+    direction: rtl;
+}
+
+.story-item.reverse > * {
+    direction: ltr;
+}
+
+.story-image .image-placeholder {
+    height: 350px;
+}
+
+.story-text h3 {
+    font-size: 1.6rem;
+    color: #2d5a45;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.9;
+}
+
+/* 특징 그리드 */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background: #f9f9f9;
+    padding: 40px 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    background: #e8f5e9;
+    transform: translateY(-5px);
+}
+
+.feature-icon-large {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feature-card h4 {
+    font-size: 1.2rem;
+    color: #2d5a45;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.7;
+}
+
+/* CTA 섹션 */
+.cta-section {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    color: #2d5a45;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* 위치 페이지 스타일 */
+.location-page {
+    background: white;
+}
+
+.location-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.map-container {
+    width: 100%;
+}
+
+.map-placeholder-large {
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #2d5a45;
+}
+
+.map-placeholder-large span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.map-placeholder-large p {
+    font-size: 1rem;
+}
+
+.map-placeholder-large .map-sub {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.detail-card {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    align-items: flex-start;
+}
+
+.detail-icon {
+    font-size: 1.8rem;
+}
+
+.detail-content h3 {
+    font-size: 1.1rem;
+    color: #2d5a45;
+    margin-bottom: 8px;
+}
+
+.detail-content p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.detail-sub {
+    font-size: 0.9rem !important;
+    color: #888 !important;
+    margin-top: 5px;
+}
+
+.detail-sub.highlight {
+    color: #e74c3c !important;
+}
+
+/* 찾아오는 방법 */
+.directions-section {
+    margin-bottom: 80px;
+}
+
+.directions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.direction-card {
+    background: #f9f9f9;
+    padding: 35px 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.direction-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.direction-card h4 {
+    font-size: 1.2rem;
+    color: #2d5a45;
+    margin-bottom: 20px;
+}
+
+.direction-card ul {
+    list-style: none;
+    text-align: left;
+}
+
+.direction-card li {
+    color: #666;
+    font-size: 0.95rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.direction-card li:last-child {
+    border-bottom: none;
+}
+
+/* 주변 관광지 */
+.nearby-section {
+    margin-bottom: 40px;
+}
+
+.nearby-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.nearby-item {
+    text-align: center;
+}
+
+.nearby-image .image-placeholder.small {
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.nearby-item h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.nearby-item p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* 서브페이지 반응형 */
+@media (max-width: 992px) {
+    .story-item {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .story-item.reverse {
+        direction: ltr;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location-main {
+        grid-template-columns: 1fr;
+    }
+
+    .directions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nearby-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        height: 40vh;
+        min-height: 300px;
+    }
+
+    .page-header-content h1 {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nearby-grid {
+        grid-template-columns: 1fr;
+    }
+}
