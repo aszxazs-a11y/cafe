@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오피스 제주 - 제주 사계의 특별한 카페</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">오피스 제주</a>
+            <ul class="nav-menu">
+                <li><a href="#about">소개</a></li>
+                <li><a href="#menu">메뉴</a></li>
+                <li><a href="#gallery">갤러리</a></li>
+                <li><a href="#location">위치</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>오피스 제주</h1>
+            <p>제주 사계, 산방산이 보이는 특별한 공간</p>
+            <a href="#about" class="btn-primary">더 알아보기</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">카페 소개</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>일상에서 벗어나 제주의 여유를 만나다</h3>
+                    <p>
+                        오피스 제주는 제주도 서귀포시 사계리에 위치한 카페입니다.
+                        창밖으로 보이는 산방산과 넓게 펼쳐진 바다의 풍경이
+                        일상의 피로를 잊게 해줍니다.
+                    </p>
+                    <p>
+                        직접 로스팅한 신선한 원두로 내린 커피와
+                        정성껏 준비한 디저트를 즐기며
+                        제주의 자연 속에서 특별한 시간을 보내세요.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">☕</span>
+                            <span>스페셜티 커피</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🍰</span>
+                            <span>수제 디저트</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🏔️</span>
+                            <span>산방산 뷰</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>카페 전경</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메뉴 섹션 -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">메뉴</h2>
+            <div class="menu-categories">
+                <button class="menu-tab active" data-category="coffee">커피</button>
+                <button class="menu-tab" data-category="drink">음료</button>
+                <button class="menu-tab" data-category="dessert">디저트</button>
+            </div>
+            <div class="menu-grid" id="menu-grid">
+                <!-- JavaScript로 동적 생성 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 갤러리 섹션 -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">갤러리</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">산방산 전망</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">카페 내부</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">시그니처 음료</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">테라스 좌석</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">일몰 풍경</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">디저트</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 위치 섹션 -->
+    <section class="location" id="location">
+        <div class="container">
+            <h2 class="section-title">오시는 길</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-item">
+                        <h4>주소</h4>
+                        <p>제주특별자치도 서귀포시 안덕면 사계리</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>영업시간</h4>
+                        <p>매일 10:00 - 20:00</p>
+                        <p class="sub-text">매주 화요일 휴무</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>연락처</h4>
+                        <p>064-123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>주차</h4>
+                        <p>카페 앞 무료 주차 가능</p>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <span>지도</span>
+                        <p>산방산 인근</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>오피스 제주</h3>
+                    <p>제주 사계의 특별한 공간</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Blog</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 오피스 제주. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
